@@ -1,1 +1,0 @@
-print("waste.py")
