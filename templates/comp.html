@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Student Comparison
+{% endblock %}
+{% block content%}
+{% if number %}
+    {%for i in range(number)%}
+        <h2>{{i}}</h2>
+    {%endfor%}
+{%else%}
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <form name="myForms" action="" method="post" onsubmit="">
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <p> ENTER THE USERNAMES OF THE STUDENTS SEPARATED USING COMMAS</p>
+        <input type="text" id="USERNAMES" name="USERNAMES" placeholder="Enter usernames">
+        <br>
+        <input type="submit" name="" value="submit">
+    </form>
+{%endif%}
+{% endblock%}

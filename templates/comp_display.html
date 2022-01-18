@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Student Comparison Result
+{% endblock %}
+{% block content%}
+    {% for key,value in traits.items() %}
+        <br><h2>The Student - {{key}} has a Latent Trait Value of - {{value}}</h2>
+    {%endfor%}
+{% endblock%}
