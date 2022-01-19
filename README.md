@@ -6,3 +6,5 @@ question according to the response to the previous question. It has a 'Comparisi
 ## How it does?
 A deep learning model uses inputs (present difficulty, response time, correctness of the response) to predict the next questions difficulty. The 'Comparison' section uses girth module an IRT package which takes inputs to evaluate the knowledge latent trait.
 
+## ShortComings
+Presently the project database is a localhost database and the database will soon be connected to a mysql server. 
